@@ -42,8 +42,7 @@ namespace NmirosTest.Api
             return student;
         }
 
-        // PUT: api/StudentApi/5
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
+        // PUT: api/StudentApi/5        
         [HttpPut("{id}")]
         public async Task<IActionResult> PutStudent(int id, Student student)
         {
@@ -73,8 +72,7 @@ namespace NmirosTest.Api
             return NoContent();
         }
 
-        // POST: api/StudentApi
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
+        // POST: api/StudentApi        
         [HttpPost]
         public async Task<ActionResult<Student>> PostStudent(Student student)
         {

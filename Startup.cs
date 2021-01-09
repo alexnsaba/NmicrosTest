@@ -27,13 +27,7 @@ namespace NmirosTest
             services.AddDbContext<SchoolContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
             services.AddDatabaseDeveloperPageExceptionFilter();
-            services.AddControllersWithViews();
-            //services.AddDbContext<MyDBContext>(_ => new MySqlConnection(Configuration["ConnectionStrings:DefaultConnection"]));
-            //string mySqlConnectionStr = Configuration.GetConnectionString("DefaultConnection");
-            //services.AddDbContextPool<MyDBContext>(options => options.UseMySql(mySqlConnectionStr, ServerVersion.AutoDetect(mySqlConnectionStr)));
-
-            //services.AddTransient<MySqlConnection>(_ => new MySqlConnection(Configuration["ConnectionStrings:Default"]));
-            //services.AddDbContext<MyDBContext>(options =>options.UseMysql(Configuration.GetConnectionString("DefaultConnection")));
+            services.AddControllersWithViews();            
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
